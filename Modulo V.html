@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo III</title>
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="/modulo2.css">
+</head>
+<body>
+    <header class="menu">
+        <nav>
+            <div><img src="./logo.png" alt=""></div>
+            <ul>
+                <li><a href="./index.html">Modulo I</a></li>
+                <li><a href="./Modulo II.html">Modulo II</a></li>
+                <li><a href="./Modulo III.html">Modulo III</a></li>
+                <li><a href="./Modulo IV.html">Modulo IV</a></li>
+                <li><a href="./Modulo V.html">Modulo V</a></li>
+                <li><a href="./Modulo VI.html">Modulo VI</a></li>
+
+                <li><a href="./Modulo VIII.html">Modulo VIII</a></li>
+                <li><a href="./Modulo IX.html">Modulo IX</a></li>
+                <li><a href="./Modulo X.html">Modulo X</a></li>
+                <li><a href="./Modulo XI.html">Modulo XI</a></li>
+                <li><a href="./Modulo XII.html">Modulo XII</a></li>
+
+                <li><a href="./Modulo XIV.html">Modulo XIV</a></li>
+                <li><a href="./Modulo XV.html">Modulo XV</a></li>
+                <li><a href="./Modulo XVI.html">Modulo XVI</a></li>
+            </ul>
+        </nav>
+    </header>
+    <i><h4>Modulo 5</h4></i>
+
+    <div class="titulo">
+        <i><h1>Recursos Administrados por el S.O</h1></i>
+    
+     </div>
+
+     <h2>Que es un proceso</h2>
+     <p>Un proceso puede informalmente entenderse como un programa en ejecución. Formalmente un proceso es "Una unidad de actividad que se caracteriza por la ejecución de una secuencia de instrucciones, un estado actual, y un conjunto de recursos del sistema asociados</p>
+    
+
+<h2>Modelo de Procesos</h2>
+<i><p> Posee las siguientes Característica:</p></i>
+<p>Todo el software ejecutable, inclusive el Sistema Operativo, se organiza en varios procesos secuenciales o procesos.
+    Un proceso incluye al programa en ejecución y a los valores activos del contador, registros y variables del mismo.
+    Conceptualmente cada proceso tiene su propia CPU virtual.
+    Un proceso es una actividad de un cierto tipo, que tiene un programa, entrada, salida y estado
+    </p>
+
+    <h2>Que es un Sistema Operativo Multihilo</h2>
+<p>Es aquel Sistema Operativo que posee varios hilos de ejecución.
+    Un hilo de Ejecución o subproceso es una característica que permite a una aplicación realizar varias tareas a la vez (concurrentemente).
+    Los distintos hilos de ejecución comparten una serie de recursos tales como el espacio de memoria, los archivos abiertos, situación de autenticación, etc.
+    </p>
+
+<h2>Estados de un proceso </h2>
+<p>Cada proceso es una entidad independiente pero frecuentemente debe interactuar con otros procesos.
+    Los procesos pueden bloquearse en su ejecución porque:
+    Desde el punto de vista lógico no puede continuar porque espera datos que aún no están disponibles.
+    El Sistema Operativo asignó la CPU a otro proceso
+    </p>
+<i><p>Los estados que puede tener un proceso son:</p></i>
+<p>En ejecución: utiliza la CPU en el instante dado.
+    Listo: ejecutable, se detiene en forma temporal para que se ejecute otro proceso.
+    Bloqueado: no se puede ejecutar debido a la ocurrencia de algún evento externo.
+    </p>
+    <br>
+
+
+<h2>Modelo de dos estados</h2>
+<div class="imagen">
+    <img src="/modelos de estados.jpg" id="">
+</div>
+
+
+<h2>Modelo de dos estados</h2>
+<p>En este modelo, un proceso puede estar ejecutándose o no. Cuando se crea un nuevo proceso, se pone en estado de No ejecución.
+    En algún momento el proceso que se está ejecutando pasará al estado No ejecución y otro proceso se elegirá de la lista de procesos listos para ejecutar para ponerlo en estado Ejecución.
+    De esta explicación se desprende que es necesario que el sistema operativo pueda seguirles la pista a los procesos, conociendo su estado y el lugar que ocupa en memoria. Además, los procesos que no se están ejecutando deben guardarse en algún tipo de cola mientras esperan su turno para ejecutar.
+    </p>
+
+<h2>Modelo de cinco estados</h2>
+<i><p>Los cinco estados del diagrama son los siguientes:</p></i>
+<p>•	Ejecución: El proceso está actualmente en ejecución.</p>
+<p>•	Listo: El proceso está listo para ser ejecutado, sólo está esperando que el planificador así lo disponga.</p>
+<p>•	Bloqueado: El proceso no puede ejecutar hasta que no se produzca cierto suceso, como una operación de Entrada/Salida.</p>
+<p>•	Nuevo: El proceso recién fue creado y todavía no fue admitido por el sistema operativo. En general los procesos que se encuentran en este estado todavía no fueron cargados en la memoria principal.</p>
+<p>•	Terminado: El proceso fue expulsado del grupo de procesos ejecutables, ya sea porque terminó o por algún fallo, como un error de protección, aritmético, etc.</p>
+
+<h2>Estados de un proceso</h2>
+<p>Durante su existencia un proceso pasa por una serie de estados discretos, siendo varias las circunstancias que pueden hacer que el mismo cambie de estado.
+    Debido a ello se puede establecer una “Lista de Listos” para los procesos “listos” y una “Lista de Bloqueados” para los “bloqueados”.
+    </p>
+
+<h2>Lista de Listos</h2>
+<p>La “Lista de Listos” se mantiene en orden prioritario y la “Lista de Bloqueados” está desordenada, ya que los procesos se desbloquean en el orden en que tienen lugar los eventos que están esperando.
+    Al admitirse un trabajo en el sistema se crea un proceso equivalente y es insertado en la última parte de la “Lista de Listos”.
+    La asignación de la CPU al primer proceso de la “Lista de Listos” se denomina “Despacho”, que es ejecutado por una entidad del Sistema Operativo llamada “Despachador”.
+    </p>
+
+<br>
+
+<h2>Bloqueados</h2>
+<p>El “Bloqueo” es la única transición de estado iniciada por el propio proceso del usuario, puesto que las otras transiciones son iniciadas por entidades ajenas al proceso</p>
+
+<h2>Programa</h2>
+<p>Conjunto de instrucciones, código. Elemento pasivo.</p>
+
+<h2>Proceso</h2>
+<p>Programa en ejecución. (Ente dinámico) Un programa puede levantar varios procesos. Tiene asociado un espacio de direcciones.</p>
+
+<br>
+
+
+<h2>Espacio de Direcciones </h2>
+<p>El espacio de direcciones es el espacio en memoria asignado al proceso. Aquí se encuentra el código del proceso y los datos que este utiliza.
+    Desde el punto de vista del proceso, el Address Space es la única memoria existente en el sistema, no pudiendo acceder a direcciones foráneas.
+    En el caso de sistemas sin paginación, el espacio de direcciones no puede ser particionado en páginas, y ser cargado por partes o llevado parcialmente a swap; resultando en que el bloque de memoria está realmente presente ya sea en RAM o disco
+    </p>
+
+<h2>Process Control Block (BCP O PCB) </h2>
+<p>El Process Control Block, (Bloque del control del Proceso) es una ficha que lleva el sistema operativo con toda la información administrativa de un proceso</p>
+
+
+<h2>EL PCB O BCP (Bloque del control del Proceso)</h2>
+<p>El sistema operativo, para correr un proceso, necesita saber cierta información importante de él, y esta, se encuentra almacenada en un registro, que es el "Bloque de control de proceso BCP".
+    Cuando un proceso termina, su información que estaba almacenada en el Bloque se elimina, y este puede ser utilizado por otros procesos.
+    </p>
+<br>
+
+<h2>Sistemas Operativos: Conceptos</h2>
+<i><p>Tabla de Procesos </p></i>
+<p>La tabla de procesos, es una estructura en memoria que contiene la ubicación de los PCB de todos los procesos del sistema. A través de esta, el kernel puede conocer el estado de cada proceso, saber en parte de la memoria se encuentra, etc.</p>
+
+<h2>Ubicación de los procesos</h2>
+<div class="imagen">
+    <img src="/ubicacion de los procesos.jpg" alt="">
+</div>
+
+
+
+
+</body>
+</html>

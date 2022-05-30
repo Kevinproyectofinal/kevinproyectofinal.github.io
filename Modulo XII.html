@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo III</title>
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="./texto.css">
+    <link rel="stylesheet" href="./modulo12.css">
+    <link rel="stylesheet" href="./ImagenyTexto.css">
+</head>
+<body>
+    <header class="menu">
+        <nav>
+            <div><img src="./logo.png" alt=""></div>
+            <ul>
+                <li><a href="./index.html">Modulo I</a></li>
+                <li><a href="./Modulo II.html">Modulo II</a></li>
+                <li><a href="./Modulo III.html">Modulo III</a></li>
+                <li><a href="./Modulo IV.html">Modulo IV</a></li>
+                <li><a href="./Modulo V.html">Modulo V</a></li>
+                <li><a href="./Modulo VI.html">Modulo VI</a></li>
+
+                <li><a href="./Modulo VIII.html">Modulo VIII</a></li>
+                <li><a href="./Modulo IX.html">Modulo IX</a></li>
+                <li><a href="./Modulo X.html">Modulo X</a></li>
+                <li><a href="./Modulo XI.html">Modulo XI</a></li>
+                <li><a href="./Modulo XII.html">Modulo XII</a></li>
+
+                <li><a href="./Modulo XIV.html">Modulo XIV</a></li>
+                <li><a href="./Modulo XV.html">Modulo XV</a></li>
+                <li><a href="./Modulo XVI.html">Modulo XVI</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Comandos de CMD para Redes</h1>
+    <h3>Ping</h3>
+    <p>Es una herramienta de diagnóstico que permita hacer verificaciones de estado de un determinado host local o remoto, Ping es un acrónimo de Packet Internet Groper que en español se traduce a un buscador de paquetes en redes. Lo que hace es lanzar una solicitud de conexión a una dirección indicada, para que después esta responda, en caso de que si responda podemos deducir que se está llegando correctamente y que existe buena conectividad. En la respuesta existen datos generales a observar, dentro de ellos, las estadísticas de ping y tiempos aproximados de ida y vuelta en milisegundos para la dirección IP solicitada, devolviendo como datos de paquetes: enviados = 5, recibidos = 5, perdidos = 0 (0% perdidos). Lo que es un buen indicio de que todo ha resultado correctamente.</p>
+    <div class="imagen">
+    <img src="./red1.png" alt="">
+    </div>
+    <h3>IPconfig</h3>
+    <p>Se utiliza para poder obtener datos de la configuración de red TCP/IP, con esto también se puede actualizar la configuración del protocolo de configuración dinámica de host (DHCP) y el sistema de nombres de dominio (DNS), si se utiliza “IP config fin IPv4” nos mostrara las direcciones IPv4 de todos los adaptadores de red instalados en el equipo, en caso de usar “ip config/all se mostrara la configuración completa de TCP/IP para todos los adaptadores </p>
+    <div class="imagen">
+    <img src="./red2.png" alt="">
+    <img src="./red2.1.png" alt="">
+</div>
+    <h3>Hostname</h3>
+    <p>Este muestra el nombre del host actual, se utiliza si no se tiene una IP específica para conectarse a un hots dentro de una red onde comparten un segmento de red, </p>
+  <h3>Getmac</h3>
+<p>Este se utiliza para poder obtener la dirección MAC (Media Access Control) que tienen asociadas los adaptadores de red.</p>
+<div class="imagen">
+    <img src="./red4.png" alt="" >
+</div>
+<h3>Shutdown</h3>
+<p>Este permite apagar o reiniciar las computadoras locales o remotas una a la vez. Se puede usar para que al momento de forzar el cierre de una aplicación y reiniciar un computadora aparezca un mensaje del motivo por el que se está forzando el reinicio de la computadora además de delimitar el tiempo en el que empezara a reiniciar la computadora</p>
+    <h3>Telnet</h3>
+    <p>Se utiliza para comunicarse con un equipo remoto que ejecute el servicio del servidor telnet (para hacer primero tiene que tener instalado el cliente telnet)</p>
+    <h3>Nslookup</h3>
+    <p>Se utiliza para poder diagnosticar la infraestructura de un sistema de nombre de dominios o DNS tiene dos usos interactivo y no interactivo si se necesita buscar solo un dato, se utiliza el modo no interactivo para esto hay que escribir el nombre de la dirección IP de la computadora que se desea buscar, después escribir el nombre o la IP de un servidor de nombres DNS</p>
+    <div class="imagen">
+        <img src="./red6.png" alt="">
+    </div>
+    <h3>Arp</h3>
+    <p>Este Muestra y modifica las tablas de conversión de direcciones IP en direcciones físicas que utiliza el protocolo de resolución de direcciones ARP (Address Resolution Protocol).</p>
+    <h3>Taskkill</h3>
+    <p>Se usa para poder finalizar los procesos que estén en ejecución, normalmente se utiliza para finalizar los procesos de manera local, pero se puede usar para finalizar los procesos en equipos remotos</p>
+    <div class="imagen">
+        <img src="./red5.png" alt="">
+    </div>
+    <h3>Tracert</h3>
+    <p>Es una herramienta de diagnóstico que etermina la ruta tomada a un destino mediante el envío de solicitudes de eco del protocolo ICMP o mensajes ICMPv6 al destino con valores de campo de tiempo de vida (TTL) que se mantienen incrementando.
+        Cada enrutador a lo largo de la ruta debe disminuir el TTL en un paquete IP en al menos 1 antes de reenviarlo. Efectivamente, el TTL es un contador de enlaces máximo. Cuando el TTL de un paquete llega a 0, se espera que el enrutador devuelva un mensaje de tiempo ICMP excedido a la computadora de origen.
+        </p>
+    <h3>Nestat</h3>
+    <p>Este muestra las conexiones TCP activos, los puertos en los que la computadora está escuchando, las estadísticas de Ethernet, la tabla de enrutamiento de IP, las estadísticas de IPv4 (para los protocolos IP, ICMP, TCP y UDP) y las estadísticas de IPv6 (para IPv6, ICMPv6, TCP sobre IPv6 y UDP sobre protocolos IPv6).</p>
+    <h3>Net use</h3>
+    <p>Este es una instrucción que se usa para conectarse, eliminar y configurar conexiones a recursos compartidos, como unidades asignadas e impresoras de red. Uno de sus usos es poder conectarse a discos de equipos remotos, permitiendo loguearse en red.</p>
+    <h1>Mascara de SubRed</h1>
+    <p>La subred se refiere al proceso de división de la red más grande en subredes más pequeñas (subnets). Siempre se asigna una dirección IP para identificar la subred y otra para identificar la dirección de difusión dentro de la subred. La subred divide las redes más grandes en partes más pequeñas, lo cual es más eficiente y permite guardar una gran cantidad de direcciones.</p>
+    <p>Una máscara de subred es un número de 32 ó 128 bits que segmenta una dirección IP existente en una red TCP/IP. El protocolo TCP/IP la utiliza para determinar si un host se encuentra en la subred local o en una red remota. La máscara de subred divide la dirección IP en una dirección de red y en una de host. De este modo, se puede identificar qué parte de la dirección IP está reservada para la red y qué parte está disponible para el uso del host. Cuando se asigna una IP Y su máscara de subred se determinar la dirección de red (subred) de un host.</p>
+    <div class="video">
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/3jKKfZffZZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+    <h1>Direcciones IP</h1>
+    <div class="imagen2">
+        <img src="./ip1.png" alt="">
+    </div>
+    <p>La dirección IP es una dirección lógiconumérica asignada a cada ordenador, impresora, etc. de una red basada en TCP/IP. Es decir, cada uno de estos dispositivos posee una dirección IP única. Las direcciones IP se configuran manualmente (dirección IP estática) o se configuran mediante un servidor DHCP. Una dirección IP consiste en 4 bytes de datos. Un byte consta de 8 bits por lo que tenemos un total de 32 bits para cada dirección IP.</p>
+    <h2>Direcciones de IP Privada</h2>
+    <p>Es una dirección fija que se asigna a cada dispositivo conectado a una red privada o doméstica, es decir, la dirección IP que el router asigna a cada ordenador, smartphones, smart TV o cualquier otro dispositivo conectado a él. Así, cada dispositivo conectado a un router tiene su propia dirección IP privada, mientras comparten la misma IP pública. Las IP’s privadas no son accesibles desde Internet y no cambian, a no ser que las asignemos nosotros manualmente.</p>
+    <h3>Rangos de IP Privada</h3>
+    <div class="subtexto">
+    <h4>Clase A</h4>
+    <p> Es el que emplean las grandes empresas, puesto que permite crear hasta 126 redes distintas y conectar hasta un máximo de 16.777.214 equipos a la red. Este rango se encuentra entre estos números: 10.0.0.0 a 10.255.255.255. El primer bloque de la dirección identifica la red y los otros tres bloques identifican a los dispositivos que se conectan a la red.</p>
+    <h4>Clase B</h4>
+    <p>Se emplea en redes de tamaño medio, como organizaciones o universidades. Permite crear un mayor número de redes que el rango A, 16.384 redes, pero con muchos menos equipos conectados a ellas, 65.534 dispositivos. El rango está en 172.16.0.0 a 172.31.255.255; los dos primeros bloques identifican la red y los restantes a los equipos conectados a ella.</p>
+    <h4>Clase C</h4>
+    <p>Es el más usado, puesto que es el que se emplea en las redes domésticas. Permite tener muchas más redes, 2.097.152, pero pudiendo conectar muchos menos equipos a cada una de ellas, 254. El rango C va desde 192.168.0.0 a 192.168.255.255; aquí son los tres primeros bloques los que identifican la red, mientras que el último identifica a los equipos.</p>
+   </div>
+    <h3>Direccion IP Publica</h3>
+    <p>Es aquella que se le asigna a cualquier dispositivo que se conecte de forma directa a Internet, por ejemplo, el router de casa o los servidores donde se alojan las páginas web. La IP pública es visible desde Internet. s una dirección única y nunca se puede repetir. La asignan los proveedores de Internet (ISP) y se la conoce también como dirección IP dinámica, puesto que cambia cada vez que reiniciamos el router o cada cierto período de tiempo. Esto quiere decir que también existe una dirección IP pública fija o estática</p>
+    <h4>Rangos de IP Publica</h4>
+    <div class="subtexto">
+        <p>Las direcciones IP públicas también tienen rangos y se corresponden a aquellos que quedan excluidos de los rangos para las IP privadas, yendo desde «1. …» hasta «191. …». De manera que el rango de la IP públicas estará en:</p>
+        <p>Clase A: 1.0.0.0 a 126.255.255.255</p>
+        <p>Clase B: 128.0.0.0 a 191.255.255.255</p>
+        <p>Clase C: 192.0.0.0 a 223.255.255.255</p>
+    </div>
+    <h1>Red Basica Packet Tracer</h1>
+    <div class="pasos">
+       <h3>Primer paso</h3>
+        <h3>Segundo paso</h3>
+    </div>
+    <div class="contenido">
+<div class="subcontenido">
+<p>Para iniciar hay que escoger los terminales finales que se conectaran, luego se selecciona el tipo de conexión que se hará es, eso significa que hay que escoger que tipo de cable se va usar para conectar los terminales al Swich</p>
+</div>
+<div class=" subcontenido">
+<p>Después de haber colocado y conectar los terminales hay que asignarles una IP a cada terminal, para poder hacer eso hay que hacer clic en un terminal, esto desplegara una pantalla</p>
+</div>
+    </div>
+    <div class="xamp">
+        <img src="./packet1.png" alt="">
+        <img src="./packet2.png" alt="">
+    </div>
+    <div class="pasos">
+        <h3>Tercer paso</h3>
+    </div>
+    <div class="contenido">
+<p>Después de esto hay que dar clic en la pestaña de escritorio y después dar clic en IP configuración, en esa parte es donde se asigna las IP estáticas, para que se puedan conectar los terminales.</p>
+    </div>
+    <div class="xamp">
+        <img src="./packet3.png" alt="">
+        <img src="./packet4.png" alt="">
+    </div>
+    <div class="pasos">
+        <h3>Cuarto paso</h3>
+    </div>
+    <div class="contenido">
+        <p>Después de haber hecho lo anterior hay que cerrar la ventana y empezar a hacer lo mismo en el resto de los terminales asignándoles una IP en la cual solo va a variar el último número, para comprobar que todo está bien conectado hay que hacer un pin entre terminales, para hacer eso hay que hacer clic en el terminal, luego darle al botón terminal y después hacer un pin</p>
+    </div>
+    <div class="xamp">
+        <img src="./packet6.png" alt="">
+    </div>
+    <h1>Red de dos SubRedes</h1>
+    <div class="pasos">
+        <h3>Primer paso</h3>
+         <h3>Segundo paso</h3>
+     </div>
+     <div class="contenido">
+        <div class="subcontenido">
+            <p>Para iniciar hay que colocar dos grupos de terminales y conectarlos cada grupo a un Swich diferente, después hay que asígnale una IP distinta a cada Terminal, después hay que asígnales el Getway para poder asignar esto hay que ir al mismo lugar en donde se configuran las IP de los terminales</p>
+        </div>
+        <div class="subcontenido">
+            <p>Después de esto hay que colocar un router y conéctalo con los Swich´s mediante un cable directo para poder terminar de conectarlos hay que especificar las direcciones MAC, las direcciones IP, las máscara de subred de ambos Swich´s y ver que el estado del puesto este encendido y por último se hace un ping para comprobar que la conexión este correcta</p>
+        </div>
+     </div>
+     <div class="xamp">
+         <img src="./dos1.png" alt="">
+        <img src="./dos2.png" alt="">
+     </div>
+</body>
+</html>

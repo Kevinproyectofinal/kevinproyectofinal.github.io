@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo III</title>
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="/modulo2.css">
+</head>
+<body>
+    <header class="menu">
+        <nav>
+            <div><img src="./logo.png" alt=""></div>
+            <ul>
+                <li><a href="./index.html">Modulo I</a></li>
+                <li><a href="./Modulo II.html">Modulo II</a></li>
+                <li><a href="./Modulo III.html">Modulo III</a></li>
+                <li><a href="./Modulo IV.html">Modulo IV</a></li>
+                <li><a href="./Modulo V.html">Modulo V</a></li>
+                <li><a href="./Modulo VI.html">Modulo VI</a></li>
+
+                <li><a href="./Modulo VIII.html">Modulo VIII</a></li>
+                <li><a href="./Modulo IX.html">Modulo IX</a></li>
+                <li><a href="./Modulo X.html">Modulo X</a></li>
+                <li><a href="./Modulo XI.html">Modulo XI</a></li>
+                <li><a href="./Modulo XII.html">Modulo XII</a></li>
+
+                <li><a href="./Modulo XIV.html">Modulo XIV</a></li>
+                <li><a href="./Modulo XV.html">Modulo XV</a></li>
+                <li><a href="./Modulo XVI.html">Modulo XVI</a></li>
+            </ul>
+        </nav>
+    </header>
+    <i><h4>Modulo 8<h4></i>
+
+        <div class="titulo">
+            <i><h1>Introducción a base de datos </h1></i>
+        
+         </div> 
+
+         <h2>Que es una Base de Datos (BD)</h2>
+<i><p>Definición 1 </p></i>
+<p>Desde un punto de vista muy simple una base de datos es básicamente un sistema para archivar información en una computadora cuyo propósito general es mantenerla disponible cuando se solicite. La información en general puede ser cualquier cosa que se considere importante para un individuo u organización.</p>
+<i><p>Definición 2 </p></i>
+<p>Es un conjunto de información almacenada en una computadora, dicha información puede ser manipulada con operaciones como agregar, consultar, eliminar entre otras. Y puede utilizarse en aplicaciones tan sencillas como llevar la información como una pequeña agenda telefónica hasta la información de una gran corporación.</p>
+
+
+<h2>Porque utilizar una BD</h2>
+<p>Las ventajas de un sistema de BD sobre los métodos tradicionales de mantener registros en papel serán quizá más evidentes a continuación:</p>
+<p>Es compacto: No hacen falta archivos de papeles que pudieran ocupar mucho espacio.
+    Es rápido: La máquina puede obtener y modificar datos con mucha mayor velocidad que un ser humano.
+    Es menos laborioso: Se elimina gran parte del tedio de mantener archivos a mano.
+    Es actual: Se dispone en cualquier momento de la información precisa y al día
+    </p>
+
+    <h2>Base de datos Relacionales</h2>
+<i><p>Antes de explicar que es una base relacional es importante algunos conceptos Básicos</p></i>
+<p> Campo: Es la unidad más pequeña a la cual uno puede referirse en un programa. Desde el punto de vista del programador representa una característica de un individuo u objeto. Ejemplo Si quisiéramos almacenar la información de un estudiante los campos serían las características asociadas a este estudiante tales como:</p>
+<p>•	Nombre</p>
+<p>•	Fecha de Nacimiento</p>
+<p>•	Teléfono etc.</p>
+<p>Registro: Es una colección de campos de iguales o de diferentes tipos. Siguiendo con el ejemplo diríamos entonces que cada campo representa a un estudiante, el cual está formado por el grupo de campos o características individuales.</p>
+<p>•	Carnet Nombre Apellido</p>
+<p>•	1590-1001 Jorge López</p>
+<p>Archivo: Es una colección de registros almacenados siguiendo una estructura homogénea.</p>
+
+<h2>Base de Datos:</h2>
+<p>Podemos decir entonces que una base de datos es una colección de archivos interrelacionados y cuyo contenido engloba a la información concerniente(almacenadas en archivos) de una organización, de tal manera que los datos estén disponibles para los usuarios.</p>
+
+<h2>Los tres componentes principales de un sistema de base de datos:</h2>
+<p>•	El hardware</p>
+<p>•	El software DBMS</p>
+<p>•	Los datos a manejar (así como el personal encargado del manejo del sistema).</p>
+
+<h2>ENTIDAD:</h2>
+<p>En una base de datos relacional conoceremos como entidad a un objeto real o abstracto acerca del cual se almacenan datos, el cual se diferencia de otros objetos a partir de atributos. Puede ser de diversa naturaleza:</p>
+
+<h2> ATRIBUTO:</h2>
+<p>Elemento o dato que describe o identifica cada entidad dándole características propias. Normalmente los atributos son virtualmente ilimitados para una entidad, pero deben seleccionarse los de mayor relevancia para el problema que se está analizando. </p>
+
+<h2>Relación uno a uno</h2>
+<p>Un registro de una Entidad A se relaciona únicamente con un registro de una tabla B y viceversa. Este tipo de relación no es común en el mundo de las bases de datos.</p>
+<i><p>Ejemplos</p></i>
+<p>Supongamos que tenemos una tabla llamada vehículo y otra llamada Matriculas, la relación que se haría entre ambas tablas sería la siguiente: un vehículo solo puede estar asociado a una sola matricula y viceversa.
+    Supongamos que almacenamos la información de un empleado en una tabla y en otra tabla guardamos los currículums vitae de los empleados. La relación en este caso es de uno a uno ya que un empleado puede tener solo un currículum vitae y viceversa.
+    </p>
+
+    <h2>Relación Uno a Mucho</h2>
+<i><p>Un registro de una Entidad A se relaciona con varios registros de una tabla B. Ejemplos</p></i>
+<p>Un Departamento tiene varios municipios, y un municipio solo pertenece a un departamento
+    Un estudiante Municipio tiene muchos ciudadanos, pero un ciudadano solo puede pertenecer a un municipio
+    </p>
+
+<h2>Relación Muchos a Muchos</h2>
+<p>Cuando un registro de una entidad A puede estar relacionado con más de un registro de la entidad B y viceversa. En este caso las dos tablas no pueden estar relacionadas directamente, se tiene que añadir una tabla entre las dos que incluya los pares de valores relacionados entre sí. Ejemplo</p>
+<p>Un estudiante puede asignarse varios cursos, pero un curso también puede tener varios estudiantes asignados.
+    Sin embargo, esto no puede ser reflejado de esta forma si no que es necesario añadir una nueva tabla para poder registrar la información en una Base de Datos
+    </p>
+
+<h2>Que es una Llave Primaria</h2>
+<p>Una llave primaria es aquel atributo (o atributos) que consideramos clave para la identificación de los demás atributos que describen a la entidad. Ejemplo</p>
+<p>•	Por ejemplo, si consideramos la entidad ALUMNO este podría tener los siguientes atributos: Carnet, Nombre, Dirección, Teléfono, de todos estos atributos el que podremos designar como llave primaria es el número de carnet, ya que es diferente para cada alumno y este los identifica de forma única dentro de la universidad.</p>
+
+<h2>Arquitectura para Sistemas de Base de Datos</h2>
+<p>Los usuarios no tienen porque conocer como están organizados y almacenados los datos, es por ese motivo que una base de datos debe presentar los datos de forma que el usuario pueda interpretarlos y modificarlos según las tareas que éste tenga asignados. Evidentemente esto no lo podemos aplicar a un informático que necesite saber donde se encuentran físicamente los datos para poder tratarlos. Según la visión y la función que realicen los usuarios sobre la BD podemos dividir en tres niveles principales :</p>
+<p>•	Nivel Interno: es el nivel más cercano al almacenamiento físico de los datos. Permite escribirlos tal y como están almacenados en la computadora. En este nivel se diseñan los archivos que contienen la información, la ubicación de los mismos y su organización, es decir se crean los archivos de configuración.</p>
+
+<h2>Arquitectura para sistemas de base de datos</h2>
+<p>•	Nivel conceptual: En este nivel se representan los datos que se van a utilizar sin tener en cuenta aspectos como lo que representamos en el nivel interno. A grandes rasgos este nivel debe ser un panorama de los datos tal como son y no como por fuerza los perciben los usuarios debido a las limitantes del lenguaje o el equipo especifico utilizado.</p>
+<p>•	Nivel externo: es el más cercano al usuario. En este nivel se describen los datos o parte de los datos que más interesan a los usuarios.</p>
+
+<h2>Sistema de Gestión de Base de Datos (SGBD)</h2>
+<p>Es el conjunto de programas que maneja todo acceso a la base de datos. Conceptualmente, lo que sucede es lo siguiente:</p>
+<p>Un usuario solicita acceso, empleando algún sublenguaje de datos determinado (por eje. SQL).
+    El SGBD interpreta esa solicitud y la analiza.
+    El SGBD inspecciona, en orden, el esquema externo de ese usuario, el esquema conceptual y la definición de la estructura almacenada.
+    El SGBD ejecuta las operaciones necesarias sobre la base de datos almacenada. (ver fig. diapositiva 16)
+    </p>
+
+
+<h2>Lenguaje de Base de Datos SQL</h2>
+<p>•	El Lenguaje SQL (structured Query Language) utilizado para base de datos fue desarrollado entre 1974 y 1975 en IBM, en esos años se le conocía como llamaba SEQUEL (Structured English Query Language) y se utilizaba como interfaz para un sistema experimental de base de datos llamado SYSTEM R.</p>
+<p>•	SQL fue introducido por Oracle por primera vez en una base de datos comercial en el año 1979 y pronto se convirtió en un estándar ANSI e ISO dando lugar de allí en adelante a varias versiones mejoradas del lenguaje.</p>
+<p>•	El lenguaje se utiliza para definir toda las estructuras de la base de datos: crear entidades, atributos, y todas su operaciones, crear, eliminar, modificar y por supuesto consultar la información</p>
+
+
+
+
+
+
+
+
+</body>
+</html>

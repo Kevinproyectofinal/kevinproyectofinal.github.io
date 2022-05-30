@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo III</title>
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="/modulo2.css">
+</head>
+<body>
+    <header class="menu">
+        <nav>
+            <div><img src="./logo.png" alt=""></div>
+            <ul>
+                <li><a href="./index.html">Modulo I</a></li>
+                <li><a href="./Modulo II.html">Modulo II</a></li>
+                <li><a href="./Modulo III.html">Modulo III</a></li>
+                <li><a href="./Modulo IV.html">Modulo IV</a></li>
+                <li><a href="./Modulo V.html">Modulo V</a></li>
+                <li><a href="./Modulo VI.html">Modulo VI</a></li>
+
+                <li><a href="./Modulo VIII.html">Modulo VIII</a></li>
+                <li><a href="./Modulo IX.html">Modulo IX</a></li>
+                <li><a href="./Modulo X.html">Modulo X</a></li>
+                <li><a href="./Modulo XI.html">Modulo XI</a></li>
+                <li><a href="./Modulo XII.html">Modulo XII</a></li>
+
+                <li><a href="./Modulo XIV.html">Modulo XIV</a></li>
+                <li><a href="./Modulo XV.html">Modulo XV</a></li>
+                <li><a href="./Modulo XVI.html">Modulo XVI</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <i><h4>Modulo 4</h4></i>
+
+    <div class="titulo">
+        <i><h1>Sistemas  operativos </h1></i>
+    
+     </div>
+
+     <h2>Sistema operativo</h2>
+     <p>Sistema tipo software que controla la computadora y administra los servicios y sus funciones como así también la ejecución de otros programas compatibles con éste.
+        Ejemplos de familias de sistemas operativos: Windows, Unix, Linux, DOS, Mac OS, etc.
+        Un sistema operativo permite interactuar con el hardware de computadoras, teléfonos celulares, PDAs, etc. y ejecutar programas compatibles en éstos.
+        Permite controlar las asignaciones de memoria, ordenar las solicitudes al sistema, controlar los dispositivos de entrada y salida, facilitar la conexión a redes y el manejo de archivos.
+        </p>
+        <h2>Servicios del sistema operativo</h2>
+        <p>Ejecución de programas- capacidad del sistema de cargar un programa en memoria y ejecutarlo.
+            Operaciones de E/S - dado que los programas no pueden ejecutar operaciones de E/S directamente, el sistema operativo debe proveer medios para realizarlas.
+            Manipulaciones del sistema de archivos – capacidad de los programas de leer, escribir, crear y borrar archivos. 
+            Comunicaciones - intercambio de información entre procesos ejecutando en la misma computadora o en otra conectada a través de una red. Implementada mediante memoria compartida o por paso de mensajes.
+            Detección de errores - asegurar un cómputo correcto mediante la detección de errores en el CPU, memoria, dispositivos de E/S o en los programas de usuario.
+            </p>
+
+            <h2>Estructura de un sistema operativo</h2>
+            <div class="imagen">
+                <img src="/sistema operativo.jpg" alt="">
+            </div>
+            <h2>Otra definicion</h2>
+            <p>Programa que actúa como interfaz entre el usuario de un ordenador y el hardware del mismo, ofreciendo el entorno necesario para que el usuario pueda ejecutar programas.
+                Visión de Máquina virtual
+                Presenta al usuario una máquina abstracta más fácil de programar que el hardware subyacente, ocultando su complejidad, y dando un tratamiento homogéneo a diferentes objetos de bajo nivel (archivos, proceso, dispositivos)
+                Visión de Gestor de recursos
+                Controla y protege los recursos (procesador, dispositivos de E/S, memoria, etc.) entre los procesos y usuarios que compiten por ellos.
+                </p>
+                <br>
+
+
+<h2>Evolución de los SSOO (1/6)</h2>
+<p>Un solo fragmento de código que se enlazaba con los programas, cargándose todo en memoria y ejecutándose junto con el programa (“biblioteca en tiempo de ejecución”)
+
+    Sistemas por lotes (batch)
+    Se podrían considerar como los primeros SSOOs reales
+    El SSOO estaba almacenado en memoria
+    Cargaba un único trabajo en memoria (desde el lector de tarjetas)
+    </p>
+
+<h2>Evolución de los SSOO (2/6)</h2>
+<p>Ejecutaba el trabajo (generaba su salida)
+    Cargaba el siguiente trabajo
+    Las tarjetas de control indicaban qué hacer al SSOO
+    </p>
+<i><p>Problemas</p></i>
+<p>Largas esperas entre lotes de trabajo
+    La dificultad de manejar la concurrencia entre E/S y ejecución en CPU ayudó a estimular el desarrollo de los SSOO multiprogramados
+    Carecen de interactividad entre el usuario y los trabajos que se ejecutan. 
+    </p>
+
+<h2>Evolución de los SSOO (3/6)</h2>
+<i><p> Multiprogramación</p></i>
+<p>Objetivo: Aprovechar los tiempos de espera de un trabajo en la CPU para ejecutar instrucciones de otro trabajo</p>
+<i><p>Método:</p></i>
+<p>Mantener los trabajos simultáneamente en memoria
+    Elegir el trabajo a conmutar
+    Necesidad de usar interrupciones o
+    DMA
+    Se optimiza la productividad (throughput) del sistema
+    </p>
+
+
+<h2>Evolución de los SSOO (4/6)</h2>
+<i><p>Elementos necesarios:</p></i>
+<p>Las rutinas de E/S deben estar suministradas por el SSOO
+    Debe existir una gestión de memoria para poder asignar y controlar la memoria repartida entre varios trabajos
+    Debe existir una planificación de la CPU. El SSOO debe elegir uno de entre los diferentes trabajos listos para ejecutarse que hay en memoria
+    La asignación de los dispositivos es realizada por el SSOO
+    </p>
+
+<h2>Evolución de los SSOO (5/6)</h2>
+<i><p>Tiempo Compartido</p></i>
+<p> Objetivo: Permitir la interacción entre el usuario y el trabajo que se está ejecutando.</p>
+<i><p>Método:</p></i>
+<p>•	Utilizar las técnicas de multiprogramación y planificación de la CPU para proporcionar a cada usuario una pequeña proporción del tiempo de CPU</p>
+<i><p>Características:</p></i>
+<p>•	Basados en la asignación de fracciones de tiempo (se divide el tiempo de CPU de forma equitativa entre los procesos).</p>
+
+<h2>Evolución de los SSOO (6/6)</h2>
+<p>Sistemas de tiempo real
+    El factor tiempo se convierte en una variable fundamental.
+    Muy utilizados en sistemas empotrados.
+    El sistema operativo debe responder siempre dentro de los márgenes requeridos por el sistema controlado, si nos salimos de esos márgenes, tendremos que buscar otras soluciones.
+    Existen actualmente lenguajes de programación (Ada) que nos dan grandes posibilidades para controlar procesos en tiempo real.
+    </p>
+    <br>
+
+<h2>Estructura monolítica</h2>
+<p>Es la estructura de los primeros sistemas operativos constituidos fundamentalmente por un solo programa compuesto de un conjunto de procedimientos entrelazados de tal forma que cada uno puede llamar a cualquier otro. </p>
+<i><p>Las características fundamentales de este tipo de estructura son:</p></i>
+<p>onstrucción del programa final a base de módulos compilados separadamente que se unen a través del ligador.
+    Buena definición de parámetros de enlace entre las distintas rutinas existentes, que puede provocar mucho acoplamiento.
+    Carecen de protecciones y privilegios al entrar a rutinas que manejan diferentes aspectos de los recursos de la computadora, como memoria, disco, etc.
+    </p>
+
+    <h2>Estructura en capas</h2>
+    <p>A medida que fueron creciendo las necesidades de los usuarios y se perfeccionaron los sistemas, se hizo necesaria una mayor organización del software, del sistema operativo, donde una parte del sistema contenía subpartes y esto organizado en forma de niveles.
+        Se dividió el sistema operativo en pequeñas partes, de tal forma que cada una de ellas estuviera perfectamente definida y con un claro interface con el resto de elementos.
+        Se constituyó una estructura jerárquica o de niveles en los sistemas operativos, el primero de los cuales fue denominado THE (Technische Hogeschool, Eindhoven), de Dijkstra, que se utilizó con fines didácticos. Se puede pensar también en estos sistemas como si fueran `multicapa'. Multics y Unix caen en esa categoría
+        </p>
+
+        <h2>Máquina Virtual</h2>
+        <p>Se trata de un tipo de sistemas operativos que presentan una interface a cada proceso, mostrando una máquina que parece idéntica a la máquina real subyacente. Estos sistemas operativos separan dos conceptos que suelen estar unidos en el resto de sistemas: la multiprogramación y la máquina extendida. El objetivo de los sistemas operativos de máquina virtual es el de integrar distintos sistemas operativos dando la sensación de ser varias máquinas diferentes.</p>
+
+<h2>Cliente-servidor (Microkernel).</h2>
+<p>El tipo más reciente de sistemas operativos es el denominado cliente-servidor, que puede ser ejecutado en la mayoría de las computadoras, ya sean grandes o pequeñas.
+    Este sistema sirve para toda clase de aplicaciones por tanto, es de propósito general y cumple con las mismas actividades que los sistemas operativos convencionales.
+    </p>
+
+    <h2>Entidad de Ejecución (proceso)</h2>
+<p>Proceso Programa en ejecución</p>
+<p>Proceso Programa cargado en memoria y con recursos asignados</p>
+<i><p>Responsabilidades del SSOO:</p></i>
+<p>crear/destruir procesos
+    suspender/reanudar procesos
+    suministrar mecanismos para sincronizar y comunicar procesos
+    </p>
+    <br>
+
+
+<h2>Componentes (1/5)</h2>
+<p>Asignar/Desasignar memoria a los programas
+    Conocer en todo momento la memoria utilizada y quien la usa
+    Decidir el tamaño de memoria que se asigna a cada proceso y cuando debe ser retirado de la misma
+    </p>
+
+<h2>Componentes (2/5)</h2>
+<i><p>Gestor de archivos</p></i>
+<p>Archivo Colección de datos (información) referenciada bajo un nombre.</p>
+<i><p>Operaciones sobre archivos:</p></i>
+<p>Crear/borrar archivos o (directorios)
+    Llamadas al sistema para su manipulación: leer, escribir, renombrar, etc. Servicios de backup, cuotas, etc
+    </p>
+
+<h2>Componentes (3/5)</h2>
+<i><p>Gestor de E/S</p></i>
+<p>Los SSOOs modernos proporcionan una I/F estándar entre los programas y los dispositivos, es decir, utilizan las mismas funciones independientemente del dispositivo.
+    El módulo del SSOO responsable de gestionar el tipo de dispositivo y encapsular el conocimiento específico del dispositivo es el manejador de dispositivo.
+    </p>
+
+<h2>Componentes (4/5)</h2>
+<i><p>Sistema de Protección</p></i>
+<p>Objetivo: Controlar los accesos de programas, procesos o usuarios, al sistema o a los recursos de usuario.</p>
+<I><P>Método:</P></I>
+<p>Distinguir entre uso autorizado o no
+    Especificar el control que se debe imponer
+    Suministrar los medios para su aplicación
+    El sistema de protección no está localizado en un único módulo, sino que que es un mecanismo general a todo el SSOO.
+    </p>
+
+<h2>Componentes (5/5)</h2>
+<i><p>Intérprete de órdenes</p></i>
+<p>Proceso que maneja la interpretación de órdenes del usuario desde un terminal, para utilizar los servicios que proporciona el SSOO.
+    Este proceso hace de interfaz con el usuario u operador del sistema. (csh, bash, ksh, etc.)
+    </p>
+    <br>
+ 
+
+    <h2>Propiedades</h2>
+<i><p>Eficacia</p></i>
+<p>•	Consumo: >40% de los ciclos de CPU</p>
+<i><p>Fiabilidad</p></i>
+<p>•	Robustez: El SSOO debe responder de forma predecible a casos de error, incluidos fallos HW
+    Protección: El SSOO debe protegerse a sí mismo y a los usuarios de acciones accidentales o malintencionadas.
+    </p>
+<i><p>Extensibilidad</p></i>
+<p>•	Variar o crecer la funcionalidad del SSOO de forma sencilla.</p>
+
+
+
+<h2>Tipos de estructuras o arquitecturas (1/6)</h2>
+<i><p>Monolítica:</p></i>
+<p>Toda la funcionalidad del SSOO se incluye en
+    el núcleo
+    Todos los componentes del SSOO se ejecutan
+    en modo supervisor
+    </p>
+
+
+<h2>Tipos de estructuras o arquitecturas (2/6)</h2>
+<h3>Partes diferenciadas:</h3>
+<i><p> Núcleo dependiente:</p></i>
+<p>Manejar las interrupciones del HW
+    Manejo de bajo nivel de memoria y discos
+    Trabajar con los manejadores de dispositivos de bajo nivel
+    </p>
+<i><p> Núcleo independiente:</p></i>
+<p>Ofrece las llamadas al sistema (“system calls”)
+    Manejar los sistemas de archivos
+    </p>
+
+
+<h2>Tipos de estructuras o arquitecturas (3/6)</h2>
+<div class="imagen">
+    <img src="/arqui36.jpg" alt="">
+</div>
+
+
+<h2>Tipos de estructuras o arquitecturas (4/6)</h2>
+<i><p>μKernel:</p></i>
+<p>Manejo de procesos e hilos
+    Manejo bajo de memoria
+    Soporte a las comunicaciones Manejo de interrupciones y operaciones de bajo nivel de E/S
+    Se usan procesos “servidores” que se encargan de ofrecer el resto de servicios (por ejemplo, el de sistema de archivos)
+    Menor rendimiento que la arquitectura monolítica debido a la sobrecarga de comunicaciones
+    </p>
+
+
+<h2>Tipos de estructuras o arquitecturas (5/6)</h2>
+<p>Empleado en sistemas grandes
+    Fácil de modificar en tiempo de ejecución
+    Más adaptable que la arquitectura monolítica Sólo el micronúcleo se ejecuta en modo
+    supervisor
+    </p>
+
+<h2>Tipos de estructuras o arquitecturas (6/6)</h2>
+<div class="imagen">
+    <img src="/arqui66.jpg" alt="">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

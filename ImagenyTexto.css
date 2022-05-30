@@ -1,0 +1,97 @@
+
+.normal{
+    padding: 10px;
+    width: 150px;
+    float: right;
+}
+.pasos{
+    margin-right: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.contenido{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 50px;
+}
+
+.xamp img{
+    width: 500px;
+    height: 350px;
+    border-radius: 30px;
+    border: solid 6px;
+}
+.xamp{
+    display: flex;
+    justify-content: space-around;
+}
+.subphp1 img{
+    width: 600px;
+    height: 150px;
+    border-radius: 30px;
+    border: solid 6px;
+}
+.subphp2 img{
+    width: 600px;
+    height: 350px;
+    border-radius: 30px;
+    border: solid 6px;
+}
+.subphp3 img{
+    width: 600px;
+    height: 400px;
+    border-radius: 30px;
+    border: solid 6px;
+}
+.subcontenido{
+    width:940px;
+    height: 100px;
+    border: solid;
+    border-color: white;
+}
+.subcontenido2{
+    width:940px;
+    height: 45px;
+    border: solid;
+    border-color: white;
+}
+.subcontenido3{
+    width:940px;
+    height: 160px;
+    border: solid;
+    border-color: white;
+}
+.subsql img{
+    width: 500px;
+    height: 150px;
+    border-radius: 30px;
+    border: solid 6px;
+}
+.etiqueta{
+    display: flex;
+    justify-content: space-around;
+}
+.etiqueta img{
+    width: 300px;
+    height: 130px;
+    border-radius: 30px;
+    border: solid 6px;
+}
+.normalizacion{
+    width:640px;
+    height: 100px;
+    border: solid;
+    border-color: white;
+}
+.etiqueta1{
+    display: flex;
+    justify-content: space-around;
+}
+.etiqueta1 img{
+    width: 500px;
+    height: 150px;
+    border-radius: 30px;
+    border: solid 6px red;
+}
+
+

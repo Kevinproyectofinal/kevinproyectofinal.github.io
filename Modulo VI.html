@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo III</title>
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="/modulo2.css">
+</head>
+<body>
+    <header class="menu">
+        <nav>
+            <div><img src="./logo.png" alt=""></div>
+            <ul>
+                <li><a href="./index.html">Modulo I</a></li>
+                <li><a href="./Modulo II.html">Modulo II</a></li>
+                <li><a href="./Modulo III.html">Modulo III</a></li>
+                <li><a href="./Modulo IV.html">Modulo IV</a></li>
+                <li><a href="./Modulo V.html">Modulo V</a></li>
+                <li><a href="./Modulo VI.html">Modulo VI</a></li>
+
+                <li><a href="./Modulo VIII.html">Modulo VIII</a></li>
+                <li><a href="./Modulo IX.html">Modulo IX</a></li>
+                <li><a href="./Modulo X.html">Modulo X</a></li>
+                <li><a href="./Modulo XI.html">Modulo XI</a></li>
+                <li><a href="./Modulo XII.html">Modulo XII</a></li>
+
+                <li><a href="./Modulo XIV.html">Modulo XIV</a></li>
+                <li><a href="./Modulo XV.html">Modulo XV</a></li>
+                <li><a href="./Modulo XVI.html">Modulo XVI</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <i><h4>Modulo 6<h4></i>
+
+    <div class="titulo">
+        <i><h1>Todo sobre linux </h1></i>
+    
+     </div>
+
+<h2>Algunos comandos básicos </h2>
+<p>Algunos de ellos como man, ls, chmod y umask ya han sido referenciados, otros se mencionarán más adelante en dependencia de los temas que se traten. Muchos de estos comandos están presentes también en los sistemas Unix, aunque a veces varían sus opciones y argumentos en dependencia de las versiones. Por esto no puede encontrarse una documentación que diga la última palabra respecto a uno u otro comando, la práctica es la mejor forma de comprobar cómo funciona cada uno. Para su mejor comprensión los clasificamos en diferentes categorías</p>
+
+<h2>Categorías</h2>
+<p>•	Comandos para manipular ficheros y directorios</p>
+<p>•	Comandos para paginar, visualizar y editar ficheros</p>
+<p>•	Comandos para hacer búsquedas de ficheros y patrones</p>
+<p>•	Comandos para filtrar ficheros</p>
+<p>•	Comandos para compactar y agrupar ficheros</p>
+
+<h2>Comandos para manipular ficheros y directorios </h2>
+<p>•	Comando ls</p>
+<p>•	Comando cd</p>
+<p>•	Comando pwd</p>
+<p>•	Comando mv</p>
+<p>•	Comando chown</p>
+
+
+<h2>Comandos para visualizar, páginar y editar ficheros</h2>
+<p>•	Comando cat</p>
+<p>•	Editor pico</p>
+<p>•	Editor vi</p>
+<p>•	Comandos more y less</p>
+<p>•	Ayuda en el sistema</p>
+
+<h2>Comandos para búsquedas de ficheros y patrones </h2>
+<p>•	Comando grep</p>
+<p>•	Comando find</p>
+<p>•	Comando locate</p>
+<p>•	Ayuda en el sistema</p>
+
+<h2>Comandos para filtrar ficheros</h2>
+<p>•	Comando file</p>
+<p>•	Comando sort</p>
+<p>•	Comando uniq</p>
+<p>•	Comandos tail y head</p>
+<p>•	Comando wc</p>
+
+
+<h2>Comandos para compactar y agrupar ficheros</h2>
+<p>•	Comandos gzip y gunzip</p>
+<p>•	Comando tar</p>
+<p>•	Ayuda en el sistema</p>
+
+
+<h2>Comandos para la comunicación entre usuarios </h2>
+<p>•	Comando write</p>
+<p>•	Comando wall</p>
+<p>•	Comando talk</p>
+<p>•	Ayuda en el sistema</p>
+
+<h2>Comandos para desconectarse del sistema </h2>
+<p>•	Comando exit</p>
+<p>•	Comando logout</p>
+<p>•	Ayuda en el sistema</p>
+
+<h2>Comandos para administrar usuarios y grupos</h2>
+<p>•	Comando useradd</p>
+<p>•	Comando userdel</p>
+<p>•	Comando passwd</p>
+<p>•	Comando usermod</p>
+<p>•	Comando chfn</p>
+
+
+<h2>Comandos variados</h2>
+<p>•	Comando echo</p>
+<p>•	Comando alias</p>
+<p>•	Comando type</p>
+<p>•	Comando tty</p>
+<p>•	Comando who</p>
+<br>
+
+<h2>Flujo de datos</h2>
+
+<p>Todos los procesos (programas en ejecución) tienen asociados tres flujos (streams) de datos principales</p>
+<i><p>Estos son:</p></i>
+<p>La entrada estándar. Es donde puede tomar los datos que maneja y que no se indican mediante argumentos u opciones. Por defecto se toma a partir del teclado.
+    La salida estándar. Es donde un proceso escribe los resultados de su ejecución. Por defecto es la terminal donde se invocó el programa correspondiente.
+    </p>
+
+<h2>Redireccionamiento</h2>
+<p>En bash los flujos de datos se pueden redireccionar libremente hacia distintos ficheros. En esencia este mecanismo consiste en que la salida de un proceso (estándar o de errores) puede escribirse en un fichero en lugar de la terminal asociada, así como la entrada puede tomarse también a partir de un fichero en lugar de utilizar lo escrito mediante el teclado.</p>
+<p>Para indicar un redireccionamiento se utilizan los signos de comparación < y >. De esta forma se generan dos tipos de construcción:</p>
+<p>	salida: indica el redireccionamiento del flujo de datos x al fichero nombrado salida. De no indicarse x se asumirá la salida estándar del programa que se haya invocado, o sea, 1.
+entrada: indica el redireccionamiento del contenido del fichero nombrado entrada hacia flujo de datos x. De no indicarse x se asumirá la entrada estándar del comando que se haya invocado, o sea, 0.
+    </p>
+
+<h2>Tuberías. pipes</h2>
+<p>son un poderoso mecanismo del shell, permite tomar la salida de un comando y pasársela como entrada a otro.
+    Muchos de los comandos mencionados anteriormente, que reciben como argumento un fichero, en caso de omitirse este, utilizan su entrada estándar. Esta entrada puede provenir a su vez de la salida de otros comandos. Lo que permite realizar diversos tipos de filtrado.
+    </p>
+
+<h2>Entorno de trabajo en bash</h2>
+<p>Un entorno de trabajo en Linux no es más que la configuración que posee un usuario durante su interacción con el sistema y más específicamente con el shell. Las características del entorno para el caso de bash pueden ser la forma en que se muestra el prompt, los alias y funciones definidos y las variables del entorno de forma general, ya que estas definen el comportamiento de muchos programas y comandos. Las facilidades para cambiar el entorno de trabajo dependen de las capacidades del shell que se utilice.</p>
+
+
+<h2>Variables del entorno</h2>
+<p>Almacenan valores que describen las propiedades del entorno de trabajo. Un usuario puede definir sus propias variables o modificar las ya existentes.
+    Para asignarle valor a una variable en el shell se emplea el operador = entre el nombre de la variable y el valor asignado (no deben haber espacios intermedios).
+    </p>
+<i><p>•	Ejemplo: $ MENSAJE="Hola amigo"</p></i>
+<p>Para acceder al valor de una variable se emplea el caracter $ seguido por el nombre de la variable. Para imprimir en la terminal el valor de una variable se puede utilizar el comando echo.</p>
+<i><p>•	Ejemplo: $ echo $MENSAJE Hola amigo</p></i>
+<br>
+
+
+<h2>Variables del entorno bash</h2>
+<p>•	PATH: guarda la secuencia de caminos donde el Shell busca los programas que se intenten ejecutar en la línea de comandos cuando no se utilizan los caminos absolutos. Estos caminos se separan por el carácter “:”</p>
+<p>•	USER: contiene el login del usuario actual.</p>
+<p>•	PAGER: almacena el paginador utilizado por defecto por algunos programas. Por ejemplo, el comando man utiliza esta variable para determinar que paginador empleará, aunque primero chequea otra variable llamada MANPAGER y si esta no tiene valor entonces acude a PAGER, que de no tener valor tampoco, asumirá al less como paginador por defecto. También asociada a man existe la variable MANPATH donde se especifican los caminos de los manuales que despliega man, y LANG para indicar el idioma.</p>
+<p>•	HOME: guarda el directorio base del usuario actual.</p>
+<p>•	EDITOR: contiene el editor por defecto del usuario actual. De no tener valor asociado se utiliza vi. En entornos gráficos se pueden indicar editores visuales aunque para ello se prefiere emplear la variable VISUAL. Más adelante veremos un ejemplo del uso de EDITOR.</p>
+
+
+</body>
+</html>

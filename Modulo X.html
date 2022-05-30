@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo III</title>
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="./texto.css">
+    <link rel="stylesheet" href="./ImagenyTexto.css">
+</head>
+<body>
+    <header class="menu">
+        <nav>
+            <div><img src="./logo.png" alt=""></div>
+            <ul>
+                <li><a href="./index.html">Modulo I</a></li>
+                <li><a href="./Modulo II.html">Modulo II</a></li>
+                <li><a href="./Modulo III.html">Modulo III</a></li>
+                <li><a href="./Modulo IV.html">Modulo IV</a></li>
+                <li><a href="./Modulo V.html">Modulo V</a></li>
+                <li><a href="./Modulo VI.html">Modulo VI</a></li>
+
+                <li><a href="./Modulo VIII.html">Modulo VIII</a></li>
+                <li><a href="./Modulo IX.html">Modulo IX</a></li>
+                <li><a href="./Modulo X.html">Modulo X</a></li>
+                <li><a href="./Modulo XI.html">Modulo XI</a></li>
+                <li><a href="./Modulo XII.html">Modulo XII</a></li>
+
+                <li><a href="./Modulo XIV.html">Modulo XIV</a></li>
+                <li><a href="./Modulo XV.html">Modulo XV</a></li>
+                <li><a href="./Modulo XVI.html">Modulo XVI</a></li>
+            </ul>
+        </nav>
+    </header>
+<h1>Insertar Datos en PHPMyadmin</h1>
+<div class="pasos">
+    <h3>Primer paso</h3>
+    <h3>Segundo paso</h3>
+</div>
+<div class="contenido">
+<p class="subcontenido2">Para poder rellenar una base de datos primero hay que abrir la tabla en phpMyAdmin, luego en la parte de arriba aparecerá una serie de opciones:</p>
+<p class="subcontenido2">Pulsamos sobre "insertar" y se nos abre una nueva pantalla</p>
+</div>
+<div class="xamp">
+    <div class="subphp1">
+ <img src="./php1.gif" alt="">
+ </div>
+ <div  class="subphp2">
+ <img src="./php2.gif" alt="" >
+ </div>
+</div>
+<div class="pasos">
+    <h3>Tercer paso</h3>
+    <h3>Cuarto paso</h3>
+</div>
+<div class="contenido">
+    <p class="subcontenido">Nos sale un panel para insertar nuevos registros en la tabla. Este panel puede estar repetido, para insertar dos registros a la vez, si queremos insertar sólo uno rellenaremos sólo la primera parte, y si queremos ver el panel sólo para un registro, iremos a la parte de abajo, donde pone "reinicie la inserción con 2 filas", cambiamos el 2 por el 1, y nos quedaremos con un solo panel para insertar.</p>
+    <p class="subcontenido">Los datos a insertar los escribiremos en la columna "Valor", para cada uno de los campos. Los campos que empiezan por id (con autoincremento) no los rellenaremos, por lo que aquí rellenamos el primer dato para el</p>
+</div>
+<div class="xamp">
+    <div class="subphp2">
+    <img src="./php3.gif" alt="">
+    </div>
+    <div  class="subphp1">
+    <img src="./php4.gif" alt="">
+    </div>
+</div>
+<div class="pasos">
+    <h3>Quinto paso</h3>
+    <h3>Sexto Paso</h3>
+</div>
+<div class="contenido">
+    <div class="subcontenido3">
+<p>La columna "Función", a no ser que queramos hacer algún tipo de operación con los datos que insertamos, la dejaremos siempre en blanco. Vamos a la parte de abajo, donde pone "grabar y luego volver", dejamos las opciones como están, y debajo de ellas pulsamos en "continuar". Nos aparece la siguiente pantalla:</p>
+</div>
+<div class="subcontenido">
+<p>Nos aparece la tabla en vista "examinar", en la cual aparecen los diferentes registros de la tabla. Si queremos ver la tabla en la vista que estaba antes, pulsamos en la parte superior en "estructura" y si queremos volver a insertar un nuevo registro pulsamos en la parte superior en insertar, y volvemos a comenzar el proceso. Es posible que al pulsar en "continuar" al acabar de insertar un registro, no nos salga la vista "examinar" sino la vista "SQL", podemos cambiar la vista desde la parte superior de la página, pulsando en examinar.
+    Ahora en vista examinar, veremos la tabla con los tres registros que hemos incluido:
+    </p>
+</div>
+</div>
+<div class="xamp">
+<div class="subphp3">
+    <img src="./php5.gif" alt="">
+</div>
+<div class="subphp2">
+    <img src="./php6.gif" alt="">
+</div>
+</div>
+
+<h1>Hacer un Back Ip en Mysql Workbench</h1>
+<div class="pasos">
+    <h3>Primer paso</h3>
+    <h3>Segundo paso</h3>
+</div>
+<div class="contenido">
+<p>Para iniciar hay que ingresar a Mysql Workbench y seleccionar la opción Data Export, tal como se señala en la figura:</p>
+<p>Aquí seleccionamos la base de datos que queremos respaldar en nuestro caso seleccionaremos la
+    BD “bdinventario”.</p>
+</div>
+<div class="xamp">
+    <img src="./sql.png" alt="">
+    <img src="./sql2.png" alt="">
+</div>
+<div class="pasos">
+    <h3>Tercer paso</h3>
+    <h3>Cuarto paso</h3>
+</div>
+<div class="contenido">
+<div class="subcontenido2">
+<p>Aparecen por defecto seleccionadas todas las tablas de la base de datos. En las opciones de la parte inferior debemos escoger si queremos crear en una carpeta varios archivos por cada tabla o un solo archivo para toda la base de datos, en nuestro caso elegimos la segunda opción:</p>
+</div>
+<div class="subcontenido">
+    <p>Luego debemos seleccionar la ubicación y el nombre de nuestro archivo sql para poder guardarlo. Nos aparecerá la siguiente pantalla y escogemos la ubicación y el nombre del archivo</p>
+</div>
+</div>
+<div class="xamp">
+    <div class="subsql">
+        <img src="./sql4.png" alt="">
+    </div>
+
+    <img src="./sql5.png" alt="">
+</div>
+<div class="pasos">
+    <h3>Quinto paso</h3>
+    <h3>Sexto Paso</h3>
+</div>
+<div class="contenido">
+    <p>luego hay que presionar el botón que dice Start Export. se aparecerá la siguiente pantalla donde esperamos que Mysql Workbench termine su trabajo.</p>
+    <p>Para verificar que todo ha sido correcto buscamos el archivo donde lo guardamos y lo abrimos con el bloc de notas para ver su contenido.</p>
+</div>
+<div class="xamp">
+    <img src="./sql7.png" alt="">
+    <img src="./sql8.png" alt="">
+</div>
+<h1>Restaurar Base de datps em Workbenchj</h1>
+<div class="pasos">
+    <h3>Primer paso</h3>
+    <h3>Segundo paso</h3>
+</div>
+<div class="contenido">
+    <p>Luego de abrir MySQL Workbench, en la ventana principal de MySQL Workbench, verá una nueva conexión debajo de la línea MySQL Connections. Haga doble clic en él para establecer una conexión con su cuenta de alojamiento y comenzar a administrar sus bases de datos.</p>
+    <p>Cuando abra una conexión a su cuenta, verá una nueva ventana que tiene varias herramientas disponibles para su uso. Puede utilizar estas herramientas para restaurar una base de datos. Para restaurar una copia de seguridad de una base de datos de mysql en su máquina local, puede usar la herramienta de importació de datos de la columna del lado izquierdo.</p>
+</div>
+<div class="xamp">
+    <img src="./restaurar.png" alt="">
+    <img src="./restaurar2.png" alt="">
+</div>
+<div class="pasos">
+    <h3>Tercer paso</h3>
+</div>
+<div>
+    <p>•	Luego seleccione la ruta desde la cual se deben importar las tablas en el campo Importar desde la carpeta del proyecto de o use la opción Importar desde un archivo autónomo si tiene una copia .sql de la base de datos.</p>
+</div>
+<div class="xamp">
+    <img src="./restaurar3.png" alt="">
+</div>
+</body>
+</html>

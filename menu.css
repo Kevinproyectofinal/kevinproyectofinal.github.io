@@ -1,0 +1,28 @@
+.menu{
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(18,78,122,1) 100%);
+}
+img{
+    width: 110px;
+    border-radius: 50%;
+}
+.menu nav{
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    color: beige;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+a:hover{
+    background: rgb(39,124,201);
+    background: linear-gradient(0deg, rgba(39,124,201,1) 0%, rgba(18,46,101,1) 64%);
+}
+.menu nav ul {
+ list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

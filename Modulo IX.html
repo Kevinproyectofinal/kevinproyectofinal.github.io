@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo IX</title>
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="./texto.css">
+    <link rel="stylesheet" href="ImagenyTexto.css">
+</head>
+<body>
+    <header class="menu">
+        <nav>
+            <div><img src="./logo.png" alt=""></div>
+            <ul>
+                <li><a href="./index.html">Modulo I</a></li>
+                <li><a href="./Modulo II.html">Modulo II</a></li>
+                <li><a href="./Modulo III.html">Modulo III</a></li>
+                <li><a href="./Modulo IV.html">Modulo IV</a></li>
+                <li><a href="./Modulo V.html">Modulo V</a></li>
+                <li><a href="./Modulo VI.html">Modulo VI</a></li>
+
+                <li><a href="./Modulo VIII.html">Modulo VIII</a></li>
+                <li><a href="./Modulo IX.html">Modulo IX</a></li>
+                <li><a href="./Modulo X.html">Modulo X</a></li>
+                <li><a href="./Modulo XI.html">Modulo XI</a></li>
+                <li><a href="./Modulo XII.html">Modulo XII</a></li>
+
+                <li><a href="./Modulo XIV.html">Modulo XIV</a></li>
+                <li><a href="./Modulo XV.html">Modulo XV</a></li>
+                <li><a href="./Modulo XVI.html">Modulo XVI</a></li>
+            </ul>
+        </nav>
+    </header>
+        <h1>Base de datos</h1>
+        <h2>Normalizacion</h2>
+        <h3>¿Que es la Normalizacion?</h3>
+        <p>Es la aplicación de un conjunto de reglas que permite aprobar la
+            construcción de un modelo de base de datos relacionales.Se incluye la creación de tablas y el establecimiento de relaciones entre
+            ellas según reglas diseñadas tanto para proteger los datos como para
+            hacer que la base de datos sea más flexible al eliminar la redundancia y
+            las dependencias incoherentes.</p>
+        <h3>Usos</h3>
+        <p>Se usa para evitar la redundancia de los datos (que los datos sean iguales) ya que estos desperdician espacio de disco y crean problemas al realizar mantenimientos, además de evitar problemas al actualizar los datos en las tablas. Además de proteger la integridad de los datos</p>
+        <p>Además se usa para corregir errores den el diseño de las base de datos, mientras más reglas se apliquen o formas normales, a una tabla, habrán menos anomalías o errores lógicos al momento de efectuar el diseño de nuestras tablas.</p>
+        <h2>Formas Normales</h2>
+        <img src="./forma normal.png" alt="" class="normal">
+        <p>Las formas Normales son reglas que definen una característica que una relación debe cumplir, estas se aplican a cada tabla en una base de datos, existen diferentes formas normales para aplicar. Generalmente se inicia con la más básica y se va subiendo de nivel. Esto no indica que se apliquen en forma iterativa. Existen tablas que no pueden seguir normalizándose.</p>
+        <p>Una relación está en FN1 si y solo si todos los atributos son atómicos. Además, debe haber solo una llave primaria. Un atributo es atómico si representa solo un valor. No deben existir más valores en el campo de la tabla. Si existen, se eliminan y se emplean en nuevas relaciones.</p>
+        <h2>Forma Normal de Boyce-Codd</h2>
+        <p>Una relación está en FNBC si y solo si todos sus determinantes son llaves de la relación. Un elemento es determinante cuando un atributo determina a otro (A->C). Si se demuestra que la relación está en FNBC, tiene que estar en FN2. Forma Normal de Boyce-Codd (FNBC)</p>
+        <h1>XAMMP</h1>
+        <p>XAMPP es una distribución de Apache que incluye diferentes softwares libres. El nombre es un acrónimo compuesto por las iniciales de los programas que lo constituyen: Linux: Es el sistema operativo donde estará instalado nuestra aplicación.  Apache: el servidor web de código abierto es la aplicación usado globalmente para la entrega de contenidos web.  MySQL/MariaDB: XAMPP cuenta con uno de los sistemas relacionales de gestión de bases de datos más populares del mundo. En combinación con el servidor web Apache y el lenguaje PHP, MySQL sirve para el almacenamiento de datos para servicios web. En las versiones actuales de XAMPP esta base de datos se ha sustituido por MariaDB.</p>
+        <p>PHP: es un lenguaje de programación de código de lado del servidor que permite crear páginas web o aplicaciones dinámicas. Es independiente de plataforma y soporta varios sistemas de bases de datos. Perl: este lenguaje de programación se usa en la administración del sistema, en el desarrollo web y en la programación de red. También permite programar  Además de estos componentes principales, esta distribución gratuita también incluye, según el sistema operativo, otras herramientas como el servidor de correo Mercury, el programa de administración de bases de datos phpMyAdmin, el software de analítica web Webalizer, OpenSSL, Apache Tomcat y los servidores FTP FileZilla o ProFTPd.</p>
+        <h2>Instalacion de XAMMP</h2>
+        <div class="pasos">
+            <h3>Primer paso</h3>
+            <h3>Segundo paso</h3>
+        </div>
+        <div class="contenido">
+            <p>Primero hay que descargar un paquete. Para ello nos vamos a dirigir a su página web y elegir la descarga del sistema operativo que tengamos</p>
+            <p>Una vez descargado el paquete, puedes ejecutar el archivo .exe haciendo doble clic en él, se va abrir un asistente de instalación.</p>
+        </div>
+        <div class="xamp">
+            <img src="./xamp.png" alt="">
+            <img src="./xamp1.png" alt="">
+        </div>
+        <div class="pasos">
+            <h3>Tercer paso</h3>
+            <h3>Cuarto paso</h3>
+        </div>
+        <div class="contenido">
+            <p>En la siguiente pantalla puede elegir la carpeta de instalación de XAMPP. La carpeta de instalación predeterminada es C:\xampp. Si quiere cambiarla, haga clic en el icono de carpeta y seleccione la carpeta donde quiere instalar XAMPP. Para continuar la configuración de la instalación, haga clic en el botón “Next”. </p>
+            <p>La siguiente pantalla ofrece información sobre los instaladores de aplicaciones para XAMPP creados por Bitnami. Haga clic en el botón “Next” para continuar. Si deja marcada la casilla, se abrirá una página web de Bitnami en el navegador.</p>
+        </div>
+        <div class="xamp">
+            <img src="./xamp2.png" alt="">
+            <img src="./xamp3.png" alt="">
+        </div>
+        <div class="pasos">
+            <h3>Quinto paso</h3>
+        </div>
+        <div>
+            <p>Una vez elegidas las opciones de instalación en las pantallas anteriores, Haga clic en el botón “Next” para comenzar la instalación en el disco duro, El proceso de copia de archivos puede durar unos minutos.</p>
+            <p>Durante la instalación, si en el ordenador no se había instalado Apache anteriormente, en algún momento se mostrará un aviso del cortafuegos de Windows para autorizar a Apache a comunicarse en las redes privadas o públicas. Una vez elegidas las opciones deseadas (en estos apuntes se recomienda permitir las redes privadas y denegar las redes públicas), haga clic en el botón “Permitir acceso”.</p>
+        </div>
+        <div class="xamp">
+            <img src="./xamp5.png" alt="">
+            <img src="./xamp5.1.png" alt="">
+        </div>
+        <div class="pasos">
+            <h3>Sexto Paso</h3>
+        </div>
+        <div class="contenido">
+            <p>Una vez terminada la copia de archivos, la pantalla final confirma que XAMPP ha sido instalado. Si se deja marcada la casilla, se abrirá el panel de control de XAMPP. Para cerrar el programa de instalación, haga clic en el botón “Finish”.</p>
+        </div>
+        <div class="xamp">
+            <img src="./xamp6.png" alt="">
+        </div>
+        <h1>Workbench</h1>
+        <p>Es una herramienta de escritorio para administrar el servidor de base de datos MySQL y la base de datos. integra muchas herramientas para ayudar a simplificar el trabajo de la base de datos. Es principalmente una herramienta de diseño de bases de datos visuales que integra las siguientes instalaciones: Crear una base de datos: Administración de propiedades y acceso de la base de datos, Desarrollar en la base de datos, Diseño de estructura de la base de datos, Gestión y mantenimiento de la base de datos.</p>
+        <h2>Instalacion de Workbench</h2>
+        <div class="pasos">
+            <h3>Primer paso</h3>
+            <h3>Segundo paso</h3>
+        </div>
+        <div class="contenido">
+            <div class="subcontenido">
+            <p>Para iniciar primero hay que ir a la página de MySQL Workbench luego ir a la parte donde dice Download y bajar hacia donde dice MySQL Community Edition</p>
+            </div>
+            <div class="subcontenido">
+            <p>Luego hay que ir a donde dice de MySQL Workbench darle a Download, después se selecciona la versión para el sistema operativo que se desea,  luego hay que dar clic en other Download, y descargar la versión de MySQL Workbench</p>
+            </div>
+        </div>
+        <div class="xamp">
+            <div class="subphp2">
+            <img src="./work1.png" alt="">
+        </div>
+        <div class="subphp2">
+            <img src="./work2.png" alt="">
+        </div>
+        </div>
+        <div class="pasos">
+            <h3>Tercer paso</h3>
+        </div>
+        <div class="contenido">
+            <p>Luego de descargar el archivo hay que ejecutarlo, dar en next, luego seleccionar el lugar donde se quiere instalar, luego dar en next y elegir si se quiere personalizar o si se desea usar la versión completa después darle a next y por ultimo dar clic en instal.</p>
+        </div>
+        <div class="xamp">
+            <div class="subphp2">
+            <img src="./work3.png" alt="">
+             </div>
+        </div>
+        <h2>Configurar MySQL Workbench con XAMMP</h2>
+        <div class="pasos">
+            <h3>Primer paso</h3>
+            <h3>Segundo paso</h3>
+        </div>
+        <div class="contenido">
+            <p>Primero hay que abrir el MySQL Workbench, después darle al signo más, agregarle un nombre a la conexión, y revisar si tiene el mismo puerto que XAMMP</p>
+            <p>Para verificar si tiene el mismo puerto de XAMMP, hay que abrir XAMMP después ir a configuraciones, después darle a service and port settings y revisar si tiene el mismo puerto</p>
+        </div>
+        <div class="xamp">
+            <img src="./work4.png" alt="">
+            <img src="./work5.png" alt="">
+        </div>
+        <div class="pasos">
+            <h3>Tercer paso</h3>
+        </div>
+        <div class="contenido">
+            <p>Después de verificar que MySQL Workbench y XAMPP tienen el mimo puerto, hay que dar clic en test conection, luego en continue anyway y por último en ok</p>
+        </div>
+        <div class="xamp">
+            <img src="./work6.png" alt="">
+        </div>
+
+</body>
+</html>

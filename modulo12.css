@@ -1,0 +1,24 @@
+
+.imagen img{
+    width: 500px;
+    border-radius: 30px;
+    border: solid;
+}
+.imagen{
+    display: flex;
+    justify-content: space-around;
+}
+.video{
+    display: flex;
+    justify-content:center;
+}
+.imagen2 img{
+    width: 200px;
+    border-radius: 30px;
+    border: solid;
+    float: right;
+}
+.subtexto p{
+    margin-left: 110px;
+    margin-bottom: 5px;
+}

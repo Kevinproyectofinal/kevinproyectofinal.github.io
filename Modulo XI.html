@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo III</title>
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="./texto.css">
+    <link rel="stylesheet" href="modulo11.css">
+    <link rel="stylesheet" href="ImagenyTexto.css">
+</head>
+<body>
+    <header class="menu">
+        <nav>
+            <div><img src="./logo.png" alt=""></div>
+            <ul>
+                <li><a href="./index.html">Modulo I</a></li>
+                <li><a href="./Modulo II.html">Modulo II</a></li>
+                <li><a href="./Modulo III.html">Modulo III</a></li>
+                <li><a href="./Modulo IV.html">Modulo IV</a></li>
+                <li><a href="./Modulo V.html">Modulo V</a></li>
+                <li><a href="./Modulo VI.html">Modulo VI</a></li>
+
+                <li><a href="./Modulo VIII.html">Modulo VIII</a></li>
+                <li><a href="./Modulo IX.html">Modulo IX</a></li>
+                <li><a href="./Modulo X.html">Modulo X</a></li>
+                <li><a href="./Modulo XI.html">Modulo XI</a></li>
+                <li><a href="./Modulo XII.html">Modulo XII</a></li>
+
+                <li><a href="./Modulo XIV.html">Modulo XIV</a></li>
+                <li><a href="./Modulo XV.html">Modulo XV</a></li>
+                <li><a href="./Modulo XVI.html">Modulo XVI</a></li>
+            </ul>
+        </nav>
+    </header>
+<h1>Redes</h1>
+<h2>Redes de comunicacion de datos</h2>
+<p>La comunicación de datos es el movimiento de información de computadoras de un punto a otro por medio de sistemas de transmisión eléctricos u ópticos. Tales sistemas también se denominan redes de comunicación de datos.
+    Incluyen transmisión de voz y video (imágenes y graficos) asi como datos, y generalmente implican mayores distancias  </p>
+    <div class="titulo">
+        <h2>Modelo general de Telecomunicaciones</h2>
+        <h2>Tipos de Redes</h2>
+        <h2>componentes de red</h2>
+        </div>
+        <div class="cont">
+            <section class="modelo">
+                <ul>
+                    <li><h4>Fuente:</h4>este es el que envia los datos</li>
+                    <li><h4>Transmisor:</h4>es el medio por el que se transmiten los datos ya sea de manera alambrica o inalambrica</li>
+                    <li><h4>Red o sistema de transmision:</h4></li>
+                    <li><h4>Receptor:</h4> es el que recibe la infromacion de una red,en las redes LAN el receptor suele ser el Router</li>
+                    <li><h4>Destino:</h4>es el destino final a donde se dirigen los datos</li>
+                </ul>
+            </section>
+            <section class="tipos">
+                <ul>
+                    <li>Por sú ambito geografico o alcance</li>
+                    <li>Por su tipo de conexión</li>
+                    <li>Por relacion funcional</li>
+                    <li>Por tecnología</li>
+                    <li>Por topología</li>
+                    <li>Por la direccinalidad de datos</li>
+                    <li>Por su agrado de autentificación</li> 
+                    <li>Por su grado de difusíon</li>
+                    <li>Por su Servicio o funcion</li>
+                </ul>
+            </section>
+            <section class="componente">
+                <ul>
+                    <li>Servidor o computadora anfirtriona (mainframe)</li>
+                    <li>Cliente (terminal)</li>
+                    <li>Circuito(Cable o Modem)</li>
+                </ul>
+            </section>
+        </div>
+        <h2>Modelos de Red</h2>
+        <p>Existen muchas formas de describir y analizar las redes de comunicación de datos. Todas las redes proporcionan las mismas funciones básicas para transferir un mensaje desde un emisor hasta un rector. Pero cada red puede emplear diferente hardware y software de redes para ofrecer estas funciones. Todos estos productos de hardware y software tienen que trabajar en conjunto para transferir con éxito un mensaje.</p>
+        <p>Para lograr una correcta comunicación existen los modelos de redes, hay muchas pero los más usados son: El Modelo de Referencia de Interconexión de Sistemas Abiertos o modelo OSI y el Modelo Internet.</p>
+            <h1>Modelo OSI</h1>
+        <div class="imagen">
+            <img src="./modelo OSI.png" alt="">
+            <img src="./OSI.gif" alt="">
+        </div>
+</div>
+<br>
+<div>
+<h2>Capas Del Modelo OSI</h2>
+<h3>Capa Fisica</h3>
+<p>Es la conexión entre el emisor y el receptor. Su papel consistente en transmitir una serie de señales eléctricas, de radio o de luz a través del circuito. La capa física incluye los dispositivos de hardware ya sean computadoras, módems, concentradores. Y los medios físicos como cables, satélites etc. La capa física específica el tipo de conexión y las señales eléctricas, ondas de radio o pulsaciones de luz que asan a través de ella. </p>
+<h3>Capa de Enlace de datos</h3>
+<p>Es responsable de transferir un mensaje de una computadora a la computadora siguiente en la ruta de la red desde el emisor hasta el receptor. Primeramente, controla la capa física decidiendo cuando transmitir mensaje sobre los medios. En segundo lugar formatea los mensajes indicando donde comienzan y donde determina. En tercer lugar, detecta y corrige los errores que hayan ocurrido durante la transmisión.</p>
+<h3>Capa de Red</h3>
+<p>Es responsable de mensajes de extremo a extremo desde el emisor hasta el destino final. En primer lugar, realiza el enrutamiento y selecciona la siguiente computadora a la que se debe enviar el mensaje. En segundo lugar, encuentra la dirección de dicha computadora si es que aún no la conoce.</p>
+<h3>Capa de Transporte</h3>
+<p>Se ocupa de las cuestiones de extremo a extremo, como los procedimientos para entrar y salir de la red. Establece, mantiene y termina las conexiones lógicas para la transferencia de datos entre el emisor original y el destino final del mensaje. Es responsable de obtener la dirección del usuario final (si es que es necesario), descomponer una transmisión grande de datos de paquetes más pequeños (si es necesario), asegurar que todos los paquetes hayan sido recibidos, eliminar paquetes duplicados y realizar un control de flujo para asegurar que ninguna computadora se sobrecargue por el número de mensajes que recibe. Aunque la capa de enlace de datos efectúa el control de errores, la capa de transporte también puede realizar verificación.</p>
+<h3>Capa de Sesion</h3>
+<p>Es la responsable de iniciar, mantener y terminar cada sesión lógica entre los usuarios finales. Esta capa es la responsable de administrar y estructurar todas las sesiones. El arranque de una sesión debe hacer los arreglos para todos los servicios deseados y requeridos, entre los participantes de la sesión, como hace la concesión con el equipo del circuito, transferir archivos, usar varios tipos de terminales y realizar verificación de seguridad. La capa de sesión también se encarga de la contabilidad de la sesión a fin de que le usuario correcto reciba la cuenta. </p>
+<h3>Capa de presentacion</h3>
+<p>La capa de presentación formatea los datos para su presentación al usuario. Su tarea consiste en acomodar diferentes interfaces en diferentes terminales o computadoras para que el programa de aplicación no tenga que preocuparse de ellas,  Se encarga de exhibir, formatear y editar, las entradas y salidas de los usuarios.</p>
+<h3>Capa de Aplicacion</h3>
+<p>La capa de aplicación es el acceso del usuario final a la red. El principal objetivo es suministrar un conjunto de servicios a los programas de aplicación. Cada programa de usuario determina el conjunto de mensajes y cualquier acción que podría tomar al recibir un mensaje. Otras aplicaciones específicas a la red en esta capa incluyen el monitoreo de la red y la administración de la red</p>
+</div>
+<div>
+<h1>Clasificacion de Redes</h1>
+<h2>Clasificacion de Redes Segun su Ambito Geografico</h2>
+<h3>Red LAN</h3>
+<img src="./LAN.jpg" alt="" id="geografia">
+<p>LAN acrónimo de Local Area Network en español red de área local. Esta tiene una extensión física limitad, consiste de un mínimo de dos dispositivos, este puede tener dos modos el primero es “de igual a igual” o P2P en el que ambos dispositivos están conectados sin necesidad de un equipo central y donde ambos cumplen la misma función, en el segundo existe un dispositivo central que brinda los servicios de red a los usuarios, en este es necesario  otros componentes de red como  Hubs, Bridges y Swicheseste que funcionan como elementos de acoplamiento y nodos. Las redes LAN usualmente están conectadas mediante cables Ethernet, o a través de cables de cobre o mediante fibra óptica 
+En caso de la red sea mediante conexión inalámbrica pasaría a ser una Wireless Local Network (WLAN) o en español red de área local inalámbrica en la que usualmente se usan las normas IEEE 802.11</p>
+<h3>Red PAN</h3>
+<img src="./PAN.jpg" alt="" id="geografia">
+<p>PAN es el acrónimo de Personal Area Netwarok o en español red de área personal, cuenta con un área limitada ya que no se extiende más allá de unos metros, esta red está hecha para que los dispositivos puedas asociarse en Ad Hoc, las conexiones suele ser de manera inalámbrica usando Bluetooth, Wifi, Wireless USB etc. Las que se llevan a cabo vía Bluetooth reciben el nombre de Piconet, las redes PAN permiten conexión con redes más grande en un Uplink o enlace de subida, la mayoría de estas redes suelen ser entre dispositivos de uso cotidiano como auriculares Bluetooth. </p>
+<h3>Red CAN</h3>
+<img src="./CAN.jfif" alt="" id="geografia">
+<p>CAN es el acrónimo de Campus Area Network o en español red de área de campus es una red que usa los mismos equipos que una red LAN como conmutadores, enrutadores cables etc. Es una colección de redes LAN dispersas en una zona delimitada, con el alcance de un par de kilómetros, usa tecnología como FDDI Gigabyte Ethernet etc. Esta red se codifica con usando varios protocolos, usando métodos como serie de broadcast. </p>
+<h3>Red MAN</h3>
+<img src="./man.gif" alt="" id="geografia">
+<p>MAN es el acrónimo de Metropolitan Area Network o en español red de área metropolitana, comunica múltiples redes LAN  de zonas geográficas cernas ya sean ciudades o pueblos mediante buses unidireccionales lo que genera una independencia en la transferencia de datos, usualmente se usan routers de alto rendimiento además se usa ya sea cable de cobre o fibra óptica esta última branda una conexión más estable y de mayor velocidad.</p>
+<h3>Red WAN</h3>
+<img src="./Wan.gif" alt="" id="geografia">
+<p>WAN es el acrónimo de Wide Area Network o en español Red de área amplia estas redes se extienden en zonas geográficas como países, en este tipo de redes se usan técnicas como IP/MPLS (Multiprotocol Label Switching), PDH (Plesiochronous Digital Hierarchy), SDH (Synchronous Digital Hierarchy), SONET (Synchronous Optical Network), ATM (Asynchronous Transfer Mode) esto ya que conecta múltiples redes MAN o LAN, debido a su extensión este tipo de redes usan un esquema de direccionamiento uniforme.</p>
+</div>
+<div>
+<h2>Clasificacion de Redes segun su Tipo de Red</h2>
+<h3>Por medios Guiados</h3>
+<p>Está formada por la conexión de cable entre los distintos dispositivos estos pueden estar formados por distintos tipos de cables o bien por más de uno al mismo tiempo</p>
+<h4>Cable coaxial o cable coax </h4>
+<img src="./coaxial.jpg" alt="" id="geografia">
+<p id="sub">Se utiliza para trasmitir señales de electricidad de alta frecuencia, tiene unos conductores concéntricos, el conductor central que se encarga de transportar los dato, luego está el dieléctrico que es una capa aisladora y luego  el conductor exterior el cual actúa como retorno de corriente y referencia de tierra.</p>
+<br>
+<h4>Cable de Par Trensado</h4>
+<img src="./par trenzado.png" alt="" id="geografia">
+<p id="sub">Este consiste en 2 cables de cobre aislado, que están unidos entre sí en una trenza, de manera que reduce la interferencia eléctrica, dependiendo de la forma en cómo se agrupen forman: pares no apantallados (UTP), pares apantallados individualmente (STP), pares apantallados (FTP).</p>
+<br>
+<h4>Fibra Optica</h4>
+<img src="./fibra.jfif" alt="" id="geografia">
+<p id="sub">Consiste de fibra de vidrio o silicio que transmite impulsos luminosos emitidos por un láser o LED, el haz de luz se refleja contra las paredes en un ángulos muy abiertos, por lo que avanza prácticamente por el centro, transmitiendo señales casi sin perdidas a largas distancias.</p>
+<br>
+<h3>Por medios no Guiados</h3>
+<p>estos transportan las ondas electromagnéticas sin usar un conductor físico, esta se denomina inalámbrica, esta se puede clasificar en tres radio, frecuencia, microondas y luz.</p>
+<h4>Satelital</h4>
+<img src="./Satelital.png" alt="" id="geografia">
+<p id="sub">Conocida como microondas por satélite, se ubican en la órbita terrestre  su ancho de banda está entre los 3 y 30 GHz, este no procesa en si la información, si no que actúa como repetidor, cubriendo un espacio amplio. </p>
+<h2>Topologias de Red</h2>
+<p>Es la forma en que se conectan las computadoras para intercambiar datos, define como se va a diseñar la red tanto física como lógicamente.</p>
+<h3>Topologia de anillo</h3>
+<img src="./anillo.jfif" alt="" id="geografia">
+<p>En esta las computadoras se conectan entre sí, formando un círculo creando un bucle cerrado haciendo que si un nodo deja de funcionar se cae la red o deja de abastecer información al resto de computadoras.</p>
+<h3>Topologia de árbol</h3>
+<img src="./arbol.png" alt="" id="geografia">
+<p>Esta usa dos o más redes de estrella conectadas entre sí, las computadoras centrales de las redes en estrella están conectados a un bus principal, si un nodo falla no generara un problema a los demás nodos, cuenta con un cable principal llamado Backbone que comunica todos los nodos de la red.</p>
+<h3>Topologia de estrella</h3>
+<img src="./estrella.png" alt="" id="geografia">
+<p>: en este existe una computadora central, el resto de computadoras están conectadas directamente a esta, lo que hace que si un nodo falla el resto no se verá afectado, ya que es la computadora central la que administra los servicios compartidos.</p>
+<h3>Topologia de malla</h3>
+<img src="./malla.png" alt="" id="geografia">
+<p>En esta la información puede viajar en diferentes caminos, así que en caso de fallar un nodo, la información tendrá otra ruta por la cual llegar. Esta topología se divide en 2 tipos.</p>
+<br>
+<h3>Topologia hibrida</h3>
+<img src="./hibrido.jpg" alt="" id="geografia">
+<p>Esta implica una combinación de dos o más tipos de topologías de redes distintas para adaptarse a las necesidades, combinando todo tipo de topologías.</p>
+<br>
+<h3>Topologia de bus</h3>
+<img src="./bus.jpeg" alt="" id="geografia">
+<p>Se basa en un cable central que lleva la información a toda la red en forma de ramificaciones lo que hace que si el cable central se ve interrumpido la red queda inutilizada</p>
+</div>
+<div>
+<h1>Packet Tracer</h1>
+<p>Cisco Packet Tracer es una herramienta integral de enseñanza y aprendizaje de tecnología de redes que ofrece una combinación única de experiencias de simulación y visualización realistas, evaluación, capacidades de creación de actividades y colaboración multiusuario y oportunidades de competencia. Las características innovadoras de Packet Tracer ayudarán a estudiantes y docentes a colaborar, resolver problemas y aprender conceptos en un entorno social dinámico y atractivo.</p>
+<h2>Como Instalar Packet Tracer</h2>
+</div>
+<div class="pasos">
+    <h3>Paso Uno</h3>
+    <h3>Paso Dos</h3>
+</div>
+<div class="contenido">
+    <p>Para iniciar primero hay que ir a la página de cisco packet tracer después ir a la parte donde dice Getting Started With Cisco Packet Tracer, después hay que dar clic en Get Started e iniciar sesión, en caso de no contar con una cuenta, hay que registrarse e iniciar sesión</p>
+    <p>Después de inicar sesión hay que dar clic en Getting Started, luego hay que ir a donde dice Introduction to Cisco Packet Tracer, luego ir a donde dice Resouces Available to You y dar clic en el link que aparece ahí</p>
+</div>
+<div class="xamp">
+    <img src="./tracer1.png" alt="">
+    <img src="./tracer2.png" alt="">
+</div>
+<div class="pasos">
+    <h3>Tercer paso</h3>
+    <h3>Cuarto Paso</h3>
+</div>
+<div class="contenido">
+    <div class="subcontenido">
+    <p>Luego de dar clic al link  aparecerán 3 links de descargas cada uno para un sistema operativo distinto, hay que descargar el que corresponda a nuestro sistema operativo </p>
+</div>
+<div class="subcontenido">
+    <p>Tras terminar de descargar el instalador hay que ejecutarlo luego darle a next, nos aparecerá la opción de cambiar la ruta de instalación del Packet Tracer, luego darle a next después nos aparecerá si se quiere crear un acceso directo, luego darle a next después darle a Instal y por ultimo dale a finish </p>
+</div>
+</div>
+<div class="xamp">
+    <img src="./tracer3.png" alt="">
+    <img src="./tracer5.png" alt="">
+</div>
+</body>
+</html>

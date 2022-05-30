@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo III</title>
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="texto.css">
+    <link rel="stylesheet" href="./ImagenyTexto.css">
+    <link rel="stylesheet" href="modulo14.css">
+</head>
+<body>
+    <header class="menu">
+        <nav>
+            <div><img src="./logo.png" alt=""></div>
+            <ul>
+                <li><a href="./index.html">Modulo I</a></li>
+                <li><a href="./Modulo II.html">Modulo II</a></li>
+                <li><a href="./Modulo III.html">Modulo III</a></li>
+                <li><a href="./Modulo IV.html">Modulo IV</a></li>
+                <li><a href="./Modulo V.html">Modulo V</a></li>
+                <li><a href="./Modulo VI.html">Modulo VI</a></li>
+
+                <li><a href="./Modulo VIII.html">Modulo VIII</a></li>
+                <li><a href="./Modulo IX.html">Modulo IX</a></li>
+                <li><a href="./Modulo X.html">Modulo X</a></li>
+                <li><a href="./Modulo XI.html">Modulo XI</a></li>
+                <li><a href="./Modulo XII.html">Modulo XII</a></li>
+
+                <li><a href="./Modulo XIV.html">Modulo XIV</a></li>
+                <li><a href="./Modulo XV.html">Modulo XV</a></li>
+                <li><a href="./Modulo XVI.html">Modulo XVI</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Introduccion al desarollo web</h1>
+    <h2>Internet</h2>
+    <p>Internet es la red que interconecta computadoras mediante diferentes protocolos una computadora puede conectarse a internet mediante un servidor de red esta conexión puede ser mediante distintas tecnologías, una computadora se puede conectar a una red local y las computadora de esta red pueden conectarse a internet, existen servidores que están permanentemente conectados a internet, estos ofrecen recursos.</p>
+    <h2>Recursos de Internet</h2>
+    <p>Internet es el medio de comunicación para diversas aplicaciones, que utilizan diferentes protocolos, destacando el correo electrónico, la transferencia de ficheros (FTP) y la web. Los recursos accesibles en internet se identifican por un URI (identificador de recurso uniforme) (URL). Una URL esta integrado por lo que aparece en la siguiente imagen.</p>
+       <div class="xamp">
+    <div class="subphp2">
+    <img src="./web2.png" alt="">
+        </div>
+    </div>
+    <h1>La Web</h1>
+    <p>Es un sistema de información distribuido basado en hipertexto, Los usuarios, mediante un navegador o cliente solicitan recursos normalmente son páginas web a un servidor web</p>
+    <h2>Inicio de la Web</h2>
+    <p>inicia con Tim Barnes Lee en el CERN en 1989 se creó para poder acceder a documentos estáticos interrelacionados almacenados en servidores distribuidos alrededor del mundo esto de manera cómoda,  al iniciar incluía un lenguaje que le daba un formato a todos los documentos, y un protocolo para poder comunicar navegadores y servidores que son los Clientes y  el HTTP.</p>
+    <h2>Como funciona la Web</h2>
+    <p>Para poder ver una página web se necesita tener una computadora conectada a internet que establece una conexión PPP con la máquina del ISP que son “los proveedores de internet”, después la computadora recibe una dirección IP temporal usando DHCP (Dynamic Host Configuration Protocol) depues la computadora recibe la dirección de un servidor de nombres (DNS, Domain Name Server).</p>
+    <p>Primero se Iniciar sesión en un navegador Web se le indica al navegador el URL de la página que se desea "visitar". Después  el navegador pide al DNS la dirección IP correspondiente al servidor que contiene el documento cuyo URL se ha indicado.  El navegador abre una sesión TCP con la máquina cuya dirección IP se ha obtenido. El navegador solicita al servidor que le transmita el documento (orden GET). El servidor web envía el documento. La conexión TCP finaliza. El navegador muestra el documento.</p>
+       <div class="xamp">
+    <div class="subphp2">
+            <img src="./web1.png" alt="">
+        </div>
+    </div>
+    <h2>Sistema Cliente Servidor</h2>
+    <h3>Cliente</h3>
+    <p>El cliente web utiliza el protocolo HTTP para poder conectar con los servidores, solicitan y muestran la página web almacenada en los servidores, suelen ser navegadores web como Explorer, Firefox ecT.</p>
+    <h3>Servidor</h3>
+    <p>Los servidores web reciben las conexiones entrantes  desde los clientes, utilizan el protocolo HTTP para transmitir datos con los clientes, almacenan y transmiten páginas web a los clientes, actualmente interactúan con el usuario y generan dinámicamente páginas web</p>
+    <h1>Lenguaje HTML</h1>
+    <p>Es un lenguaje que permite incluir texto junto con indicaciones de como mostrarlo, cómo y dónde incluir imágenes y cómo acceder mediante enlaces a otros recursos en Internet (y también posibilita la entrada de datos), El navegador-cliente solicita y recibe del servidor web una página y nos la presenta formateada, La página puede “pedir” al servidor imágenes (o otros recursos) que están en archivos distintos de la propia página web y son enviados por el servidor y presentados por el cliente junto al texto</p>
+    <div class="titulo">
+        <h2>Elementos Basicos</h2>
+        <h2>Caracteristicas Especiales</h2>
+    </div>
+    <div class="titulo1">
+        <div class="basicos">
+            <ul>
+            <li><h4>Rotulos Basicos</h4> (HEAD) (TITTLE) (P)</li>
+            <li><h4>Rotulos de Formato físico</h4> (B) (I)</li>
+            <li><h4>Enlaces de Hipertexto</h4> (A HREF="")</li>
+            <li><h4>Rotulo de Formato Logico</h4>(STRONG) (EM) (UL) (LI)</li>
+        </ul>
+        </div>
+        <div class="especial">
+            <ul>
+                <li>Permiten que diferentes navegadores hagan visibles los
+                    caracteres diagráficos de los idiomas diferentes al inglés:</li>
+                    <li><h4>& aacute; Permite escribir</h4>á é í ó ú</li>
+                    <li><h4>& agrave; Permite escribir</h4>à è ì ò ù/li>
+                    <li><h4>& ntilde; Permite escribir</h4>ñ ç ö</li>
+            </ul>
+        </div>
+    </div >
+    <div class="titulo">
+     <h2> Caracteristicas de tablas </h2>
+     <h2> Caracteristicas de un Formulario</h2>
+    </div>
+    <div class="contenido">
+        <p>Es una Organización comparativa de información, da Ubicación dentro de la página cuenta con Múltiples atributos para especificar</p>
+        <p>Es interactivo, da retroalimentación, permite recolectar datos, los datos se puede tabular y analizar, las respuestas pueden estar personalizadas</p>
+    </div>
+    <div class="xamp">
+        <img src="./tabla.png" alt="">
+        <img src="./formulario.png" alt="">
+    </div>
+</body>
+</html>

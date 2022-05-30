@@ -1,0 +1,73 @@
+.modelo{
+    background: rgb(6,58,124);
+    background: linear-gradient(0deg, rgba(6,58,124,1) 0%, rgba(13,135,147,1) 57%);
+    width: 650px;
+    height: 300px;
+    font-size: 18px;
+    font-family:'Arial Narrow';
+    text-decoration: none;
+    border-style: outset;
+    border-radius: 50px;
+    padding: 5px;
+    margin: 10px;
+}
+.modelo ul li h4{
+    font-family:'Times New Roman';
+    padding: 1px;
+    margin: 1px;
+}
+.componente{
+    background: rgb(6,58,124);
+    background: linear-gradient(0deg, rgba(6,58,124,1) 0%, rgba(13,135,147,1) 57%);
+    width: 450px;
+    height: 90px;
+    font-size: 18px;
+    font-family:'Arial Narrow';
+    text-decoration: none;
+    border-style: outset;
+    border-radius: 50px;
+    padding: 5px;
+    margin: 10px;
+}
+.tipos{
+    background: rgb(6,58,124);
+    background: linear-gradient(0deg, rgba(6,58,124,1) 0%, rgba(13,135,147,1) 57%);
+    width: 450px;
+    height: 220px;
+    font-size: 18px;
+    font-family:'Arial Narrow';
+    text-decoration: none;
+    border-style: outset;
+    border-radius: 50px;
+    padding: 5px;
+    margin: 10px;
+}
+.columna{
+    display: flex;
+    justify-content: space-around;
+}
+.titulo{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 90px;
+}
+.cont{
+    display: flex;
+    justify-content: space-around;
+}
+.imagen img{
+    width: 500px;
+    border-radius: 20px;
+}
+.imagen{
+    display: flex;
+    justify-content: space-around;
+}
+#geografia{
+    float: right; 
+    width: 90px;
+    height: 70px;
+    border-radius: 15px;
+    border: solid;
+   
+}
